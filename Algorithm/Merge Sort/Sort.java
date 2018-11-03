@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+//Sort array.
 public class Sort {
     public int[] mergeSort(int[] list) {
         int length = list.length;
