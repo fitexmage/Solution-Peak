@@ -3,17 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
 
 import java.util.Scanner;
-
-import java.util.*;
 
 /**
  *
  * @author fitexmage
  */
-public class Test {
+public class Main {
 
     /**
      * @param args the command line arguments
