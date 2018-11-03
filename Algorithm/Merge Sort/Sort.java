@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class Sort {
     public int[] mergeSort(int[] list) {
         int length = list.length;
         if (length == 0 || length == 1) {
