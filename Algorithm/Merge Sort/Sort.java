@@ -2,14 +2,14 @@ import java.util.Arrays;
 
 //Sort array.
 public class Sort {
-    public int[] mergeSort(int[] list) {
-        int length = list.length;
+    public int[] mergeSort(int[] array) {
+        int length = array.length;
         if (length == 0 || length == 1) {
-            return list;
+            return array;
         } else {
             int mid = length / 2;
-            int[] left = mergeSort(Arrays.copyOfRange(list, 0, mid));
-            int[] right = mergeSort(Arrays.copyOfRange(list, mid, length));
+            int[] left = mergeSort(Arrays.copyOfRange(array, 0, mid));
+            int[] right = mergeSort(Arrays.copyOfRange(array, mid, length));
             int[] mergedArray = merge(left, right);
             return mergedArray;
         }
