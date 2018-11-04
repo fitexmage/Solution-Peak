@@ -1,4 +1,4 @@
-//Sort array.
+//Find the number with the given index of a sorted array.
 public class FindTarget {
     public int findTarget(int[] array, int low, int high, int targetIndex) {
         if (low < high) {
