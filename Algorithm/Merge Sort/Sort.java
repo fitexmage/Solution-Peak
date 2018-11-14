@@ -9,7 +9,7 @@ public class Sort {
         } else {
             int mid = length / 2;
             int[] left = mergeSort(Arrays.copyOfRange(array, 0, mid));
-            int[] right = mergeSort(Arrays.copyOfRange(array, mid, length));
+            int[] right = mergeSort(Arrays.copyOfRange(array, mid, length-1));
             int[] mergedArray = merge(left, right);
             return mergedArray;
         }
