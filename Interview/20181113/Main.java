@@ -24,9 +24,6 @@ public class Main {
         if (string.equals("")) {
             return true;
         }
-        if (list.isEmpty()) {
-            return false;
-        }
 
         for (String s : list) {
             if (string.contains(s)) {
