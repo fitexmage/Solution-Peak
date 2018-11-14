@@ -28,10 +28,10 @@ public class Main {
             return false;
         }
 
-        for (String s: list) {
-            String[] word_list = string.split(s, 2);
-            if (word_list[0].equals("")) {
-                if (split(list, word_list[1])) {
+        for (String s : list) {
+            if (string.contains(s)) {
+                String[] word_list = string.split(s, 2);
+                if (word_list[0].equals("") && split(list, word_list[1])) {
                     return true;
                 }
             }
