@@ -1,9 +1,12 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
 //输入一个列表的单词，及一个长字符串，判断字符串是否能由列表中的单词组成。
 //补充条件：一个单词可以被使用多次；每个单词不必都被用上；不允许以单词重叠的方式组成字符串。
+
+//输入:['I', 'love', 'byte', 'bytedance], 'Ilovebytedance'
+//输出:true
+
 public class Main {
 
     public static void main(String[] args) {
