@@ -20,22 +20,16 @@ public class Main {
     }
 
     static public boolean solution(List<String> list, String string) {
-        return split(list, string);
-    }
+        boolean[] checks = new boolean[string.length() + 1];
+        checks[0] = true;
 
-    static public boolean split(List<String> list, String string) {
-        if (string.equals("")) {
-            return true;
-        }
-
-        for (String s : list) {
-            if (string.contains(s)) {
-                String[] word_list = string.split(s, 2);
-                if (word_list[0].equals("") && split(list, word_list[1])) {
-                    return true;
+        for (int i = 1; i <= string.length(); i++) {
+            for (int j = 0; j < i; j++) {
+                if (checks[j] == true && list.contains(string.substring(j, i))) {
+                    checks[i] = true;
                 }
             }
         }
-        return false;
+        return checks[string.length()];
     }
 }
